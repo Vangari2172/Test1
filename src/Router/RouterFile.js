@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import AddProduct from "../components/AddProduct";
+import EditProduct from "../components/EditProduct";
 import Header from "../components/Header";
-import ViewTable from "../components/ViewTable";
-import AddUser from "../components/AddUser";
-import EditUser from "../components/EditUser";
+import Table from "../components/Table";
 
 const RouterFile = () => {
   return (
@@ -15,12 +15,12 @@ const RouterFile = () => {
           element={
             <div>
               <Header />
-              <ViewTable />
+              <Table />
             </div>
           }
         />
-        <Route exact path="/add" element={<AddUser />} />
-        <Route exact path="/editUser" element={<EditUser />} />
+        <Route exact path="/add" element={<AddProduct />} />
+        <Route exact path="/edit" element={<EditProduct />} />
       </Routes>
     </div>
   );

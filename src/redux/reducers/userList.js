@@ -7,7 +7,7 @@ const userList = (state = initialData, action) => {
   if (action.type === "USER_DATA") {
     console.log("USER_DATA", state);
     return {
-      list: [...state.list, action.payload.data],
+      list: [...state.list, action.data],
     };
   }
   if (action.type === "DELETE_USER") {

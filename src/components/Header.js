@@ -9,11 +9,18 @@ const Header = () => {
         style={{
           display: "flex",
           justifyContent: "right",
-          paddingRight: "20px",
+          marginRight: "3%",
         }}
       >
-        <Link to="./add">
-          <button className="btn btn-warning">ADD USER</button>
+        <Link to="/add">
+          <div>
+            <button
+              className="btn"
+              style={{ backgroundColor: "orangered", color: "white" }}
+            >
+              Add Product
+            </button>
+          </div>
         </Link>
       </nav>
     </div>

@@ -1,8 +1,8 @@
 import { legacy_createStore as createStore } from "redux";
-import rootReducer from "./reducers";
+import rootReducers from "./reducers/index";
 
 const store = createStore(
-  rootReducer,
+  rootReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
